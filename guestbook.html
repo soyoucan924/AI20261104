@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="留下您對 En’Muse 的想法與建議。">
+  <title>訪客留言｜En’Muse</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/guestbook.css">
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5ZPB8B3Z');
+  </script>
+</head>
+<body class="guestbook-page">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZPB8B3Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg container py-3" aria-label="主選單">
+      <a class="navbar-brand logo" href="index.html">En’Muse</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="展開選單"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html#story">Brand Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#movie">Lookbook</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="guestbook.html">訪客留言</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav-tools d-flex gap-3 justify-content-center"><button type="button" aria-label="搜尋">⌕</button><button type="button" aria-label="會員">♙</button><button type="button" aria-label="購物袋">♧<sup>0</sup></button></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="guestbook-hero"><div class="container text-center"><p class="eyebrow">GUESTBOOK</p><h1>訪客留言</h1><p>妳的每一句話，都是讓 En’Muse 更好的靈感。</p></div></section>
+    <section class="guestbook-content"><div class="container"><div class="guestbook-card">
+      <div class="guestbook-intro"><span class="guestbook-mark" aria-hidden="true">♡</span><h2>分享妳的想法</h2><p>無論是產品心得、使用建議，或想對我們說的話，都很歡迎留下來。留言會直接寄送給 En’Muse 團隊，不會公開顯示在網站上。</p></div>
+      <form action="https://formsubmit.co/soyoucan@gmail.com" method="POST" class="guestbook-form">
+        <input type="hidden" name="_subject" value="En’Muse 網站新訪客留言"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row g-4"><div class="col-md-6"><label for="guest-name">您的稱呼 <span aria-hidden="true">*</span></label><input id="guest-name" name="訪客稱呼" type="text" autocomplete="name" maxlength="40" required></div><div class="col-md-6"><label for="guest-email">電子信箱 <small>（選填，方便我們回覆）</small></label><input id="guest-email" name="email" type="email" autocomplete="email" maxlength="100"></div><div class="col-12"><label for="guest-message">想對 En’Muse 說的話 <span aria-hidden="true">*</span></label><textarea id="guest-message" name="留言內容" rows="7" maxlength="1000" required aria-describedby="message-count"></textarea><p id="message-count" class="form-note" aria-live="polite">0 / 1000</p></div><div class="col-12 form-submit-row"><p class="privacy-note">送出即表示您同意我們依留言用途聯繫您；您的留言不會公開刊登。</p><button class="btn btn-brand" type="submit">送出留言　›</button></div></div>
+      </form>
+    </div></div></section>
+  </main>
+  <footer><div class="container"><div class="footer-top"><a class="logo text-white" href="index.html">En’Muse</a><span class="divider"></span><div class="footer-links"><a href="index.html#story">關於我們</a><a href="guestbook.html">訪客留言</a><a href="#">隱私權政策</a><a href="#">服務條款</a><a href="#">常見問題</a></div><div class="social">◎　f　▶　●</div></div><p>© 2026 En’Muse. All Rights Reserved.</p></div></footer>
+  <script src="js/bootstrap.bundle.min.js"></script><script src="js/guestbook.js"></script>
+</body>
+</html>
