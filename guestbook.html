@@ -8,6 +8,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/guestbook.css">
+  <style>.guestbook-form .btn-brand:disabled{opacity:.65;cursor:wait}.form-status{margin:0;color:var(--wine);font-size:.85rem;min-height:1.25rem;text-align:center}</style>
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -38,9 +39,9 @@
     <section class="guestbook-hero"><div class="container text-center"><p class="eyebrow">GUESTBOOK</p><h1>訪客留言</h1><p>妳的每一句話，都是讓 En’Muse 更好的靈感。</p></div></section>
     <section class="guestbook-content"><div class="container"><div class="guestbook-card">
       <div class="guestbook-intro"><span class="guestbook-mark" aria-hidden="true">♡</span><h2>分享妳的想法</h2><p>無論是產品心得、使用建議，或想對我們說的話，都很歡迎留下來。留言會直接寄送給 En’Muse 團隊，不會公開顯示在網站上。</p></div>
-      <form action="https://formsubmit.co/soyoucan@gmail.com" method="POST" class="guestbook-form">
-        <input type="hidden" name="_subject" value="En’Muse 網站新訪客留言"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://soyoucan924.github.io/AI20261104/"><input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div class="row g-4"><div class="col-md-6"><label for="guest-name">您的稱呼 <span aria-hidden="true">*</span></label><input id="guest-name" name="訪客稱呼" type="text" autocomplete="name" maxlength="40" required></div><div class="col-md-6"><label for="guest-email">電子信箱 <small>（選填，方便我們回覆）</small></label><input id="guest-email" name="email" type="email" autocomplete="email" maxlength="100"></div><div class="col-12"><label for="guest-message">想對 En’Muse 說的話 <span aria-hidden="true">*</span></label><textarea id="guest-message" name="留言內容" rows="7" maxlength="1000" required aria-describedby="message-count"></textarea><p id="message-count" class="form-note" aria-live="polite">0 / 1000</p></div><div class="col-12 form-submit-row"><p class="privacy-note">送出即表示您同意我們依留言用途聯繫您；您的留言不會公開刊登。</p><button class="btn btn-brand" type="submit">送出留言　›</button></div></div>
+      <form action="https://formsubmit.co/ajax/soyoucan@gmail.com" method="POST" class="guestbook-form">
+        <input type="hidden" name="_subject" value="En’Muse 網站新訪客留言"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row g-4"><div class="col-md-6"><label for="guest-name">您的稱呼 <span aria-hidden="true">*</span></label><input id="guest-name" name="訪客稱呼" type="text" autocomplete="name" maxlength="40" required></div><div class="col-md-6"><label for="guest-email">電子信箱 <small>（選填，方便我們回覆）</small></label><input id="guest-email" name="email" type="email" autocomplete="email" maxlength="100"></div><div class="col-12"><label for="guest-message">想對 En’Muse 說的話 <span aria-hidden="true">*</span></label><textarea id="guest-message" name="留言內容" rows="7" maxlength="1000" required aria-describedby="message-count"></textarea><p id="message-count" class="form-note" aria-live="polite">0 / 1000</p></div><div class="col-12 form-submit-row"><p class="privacy-note">送出即表示您同意我們依留言用途聯繫您；您的留言不會公開刊登。</p><button class="btn btn-brand" type="submit">送出留言　›</button></div><p id="form-status" class="form-status col-12" role="status" aria-live="polite"></p></div>
       </form>
     </div></div></section>
   </main>
